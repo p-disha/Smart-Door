@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Visitor form</title>
+    </head>
+    <body>
+
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+        <form id="contact-form" method="post">
+            <h4>Name:</h4>
+            <input type="text" style="height:35px;" id="name-input" placeholder="Enter name" class="form-control"><br>
+            <h4>Phone:</h4>
+            <input type="phone" style="height:35px;" id="phone-input" placeholder="Enter phone number" class="form-control"><br>
+            <button type="button" onclick="submitToVisitorForm(event)" class="btn btn-lg" style="margin-top:20px;" name="approve">Submit</button>
+        </form>
+    </body>
+</html>

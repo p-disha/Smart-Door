@@ -1,0 +1,26 @@
+
+
+<html>
+    <head>
+        <title>Visitor form</title>
+    </head>
+    <body>
+		<script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+	<script type="text/javascript" src="apiGateway-js-sdk/apigClient2.js"></script>
+	<script type="text/javascript" src="js/mainVisitor.js"></script>
+        <form id="passcode-form" method="post">
+            <h4>Passcode:</h4>
+            <input type="text" style="height:35px;" id="passcode-input" placeholder="Enter passcode here" class="form-control"><br>
+            <button type="button" onclick="submitPasscode(event)" class="btn btn-lg" style="margin-top:20px;" name="submit">Submit</button>
+		</form>
+    </body>
+</html>
